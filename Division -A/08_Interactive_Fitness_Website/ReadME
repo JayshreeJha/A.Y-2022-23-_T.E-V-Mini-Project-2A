@@ -23,15 +23,20 @@ View Appointments
 
 Project Implementation:
 1. Download the zip file.
-2. Open the folder (FitGeek) in the terminal or command prompt.
-3. Create a Virtual Environment and open the venv folder.
-4.   Activate the Virtual environment:  
-      For Windows: .\Scripts\activate 
-      For Mac: Source Scripts/activate.
-5. Python manage.py runserver
-6. Open the given link to access the website.
-7. Create a superuser. 
-8. Database can be accessed via ‘given-link’/health-admin
+2. Unzip healthapp, healthproject, templates in the same folder
+3. Open the folder (FitGeek) in the terminal or command prompt. 
+4. Create a Virtual Environment and open the venv folder.
+5.   Activate the Virtual environment:  
+      For Windows: '.\Scripts\activate' 
+      For Mac: 'Source Scripts/activate'.
+6. Python manage.py runserver
+In case of an error, try the following commands in order:
+   i> 'python manage.py makemigrations'
+   ii> 'python manage.py migrate'
+   iii> 'python manage.py runserver'
+7. Open the given link to access the website.
+8. Create a superuser. 
+9. Database can be accessed via ‘given-link’/health-admin
 
 Requirements:
 Django==4.0.5
