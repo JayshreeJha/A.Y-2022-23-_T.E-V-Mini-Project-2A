@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap5 contact form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="constyle.css">
+</head>
+
+<body>
+    <div class="form-area">
+        <div class="container">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+            <div class="row single-form g-0">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="left">
+                        <h2><span>Contact Us for</span> <br>Enquies</h2>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="right">
+                        <i class="fa fa-caret-left"></i>
+                        <form onclick="sendemail">
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Message</label>
+                                <textarea type="password" class="form-control" id="exampleInputPassword1"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" onclick="sendemail()">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    function sendemail() {
+
+        Email.send({
+
+            Host: "smtp.elasticemail.com",
+            Username: "photostock@gmail.com",
+            Password: "1765C343848B28E6A91AD2D7F2612ACD40C6",
+            To: 'darpanmhatre25@gmail.com',
+            From: 'archerblaze0@gmail.com',
+            Subject: "This is the subject" + name,
+            Body: document.getElementById("Message").value,
+        }).then(
+            message => {
+                //console.log (message);
+                if (message == 'OK') {
+                    alert('Your mail has been send. Thank you for connecting.');
+                }
+                else {
+                    console.error(message);
+                    alert('There is error at sending message. ')
+
+                }
+
+            }
+        );
+
+
+
+    }
+
+
+</script>
+
+</html>
