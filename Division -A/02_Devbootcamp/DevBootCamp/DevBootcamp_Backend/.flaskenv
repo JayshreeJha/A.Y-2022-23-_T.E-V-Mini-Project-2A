@@ -1,0 +1,7 @@
+FLASK_APP=api/index.py
+FLASK_ENV=development
+# APP_SETTINGS="config.DevelopmentConfig"
+# DATABASE_URL="postgresql://postgres:password@localhost:5432/devbootcamp"
+# SECRET_KEY="004f2af45d3a4e161a7dd2d17fdae47f"
+# STRIPE_PUBLISHABLE_KEY="pk_test_51LoRJbSFJVQA73jsmRJSJ5bwscbE8EkvTbuG7QgC4kgqepoFgzQrc7ylztTVB27ENClRCfLL1CnPPJVU6j1n4eMw00KW5huN5L"
+# STRIPE_SECRET_KEY="sk_test_51LoRJbSFJVQA73jsdsH0Ntk7vPhZI4A9CfMC9yxduzQfdpU7WPsF75qYTAW7b1nRlHm4NLeMteCJl6TfjEKW6pta00V7R3NISk"
