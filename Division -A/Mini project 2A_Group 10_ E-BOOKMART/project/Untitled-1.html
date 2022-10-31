@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Send Mail</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <h3> Send Email using Javascript</h3>
+    <form action="#" method="post">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter Name"> <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter Email"> <br>
+        <label for="message">Message</label>
+        <textarea  id="message" placeholder="Enter Message" rows="3"> </textarea>  <br>
+
+        <button type="submit" id="submit" onclick="sendEmail()"> Send Email </button>
+    </form>
+     <div id="response"></div>
+</body>
+
+
+<script>  
+function sendEmail() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+    let finalmessage = `Name : ${name} <br>  Email : ${email} <br>  Message : ${message} <br>`;
+
+    Email.send({
+        Host : "smtp.mailtrap.io",
+        Username : "username",
+        Password : "password",
+        To : 'them@website.com',
+        From : "you@isp.com",
+        Subject : "Mail from website",
+        Body : finalmessage
+    }).then(
+      message => alert(message)
+    );
+}
+</script>
+
+
+</html>
