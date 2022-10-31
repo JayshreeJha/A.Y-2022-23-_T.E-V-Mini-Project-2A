@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    </head>
+    <body background="bgupload.png" style="background-position: center; background-repeat: no-repeat;">
+        <table border="0" style="margin-left:auto; margin-right:auto; margin-top:100px ;min-height:500px; min-width:800px;">
+            <tr>
+                <td rowspan="11">
+                    <div class="uploadbox" id="imgBox">
+                    <label for="file"><img src="upload.png" style="cursor:pointer; width:350px; margin-left: 100px;"></label>
+                      <input type="file" accept="image/*" name="image" id="file" style="display:none; transform: translateX(-50%)" onchange="loadfile(event)">
+                    </div>
+                </td>
+                <th colspan="2"><h3>Upload</h3></th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="uname">Name:</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="uname" class="form-control" style="text-align:left; font-size:small;" placeholder="Owner's username">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                        <label for="email">E-mail id:</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="email" class="form-control" style="text-align:left;" placeholder="abc@mail.com">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                        <label for="pno">Phone no.:</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="pno" class="form-control" style="text-align:left;" maxlength="10" size="7">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                        <label for="pics">Picture Type:</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <select name="pics" id="pics">
+                    <option value="select">Select</option>
+                    <option value="photo">Photo</option>
+                    <option value="vector">Vector</option>
+                    <option value="illustration">Illustration</option>
+                    <option value="3d">3D</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                        <label for="amount">Amount:</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="amount" class="form-control" placeholder="In Rupees" style="text-align:left;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                        <label for="descript">Description:</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="text" id="descript" class="form-control" style="text-align:left;">
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button" class="btn btn-info">Upload</button></td>
+                <td><button type="button" class="btn btn-danger">Cancel</button></td>
+            </tr>
+          </table>
+
+         
+    </body>
+    <script>
+        var imgBox = document.getElementById("imgBox");
+        {
+            imgBox.style.backgroundImage = "url(" +URL.createObjectURL(event.target.files[0])+ ")";
+        }
+      </script>
+</html>

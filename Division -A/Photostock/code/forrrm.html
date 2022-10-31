@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form in HTML</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        .ff {
+            background-color: darkgrey;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+
+        }
+    </style>
+    <script>
+        function val() {
+            let sname = document.forms["f1"]["sname"].value;
+            let email = document.f1.email.value;
+            let pwd = document.f1.pwd.value;
+            let cpwd = document.f1.cpwd.value;
+            let gen = document.f1.gender.value;
+
+            if (!(isNaN(sname))) {
+
+                alert("enter only characters for sname");
+                document.f1.sname.focus();
+                return false;
+            }
+            if (pwd.length < 8 || cpwd.length < 8) {
+                alert("password must be minimum 8 in length");
+                document.f1.pwd.focus();
+                return false;
+            }
+            if (pwd != cpwd) {
+                alert("password mismatch")
+                document.f1.pwd.focus();
+                return false;
+            }
+            let i;
+            for (i = 0; i < 3; i++) {
+                if ((gender[i].checked)) {
+                    return true
+                }
+                else {
+                    alert("please choose gender");
+                    document.reg.gender.focus();
+
+                    return false;
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Registration form</h2>
+    <form method="get" name="f1" class="ff">
+            <legend>User personal information</legend>
+            <label>Enter your full name</label><br>
+            <input type="text" name="sname" onfocus="true" required><br>
+            <label>Enter your email</label><br>
+            <input type="email" name="email" onfocus="true" required><br>
+            <label>Enter your password</label><br>
+            <input type="password" name="pwd" required><br>
+            <label>confirm your password</label><br>
+            <input type="password" name="cpwd" required><br>
+            <br><label>Enter your gender</label><br>
+            <input type="radio" id="gender" name="gender" value="male" />Male <br>
+            <input type="radio" id="gender" name="gender" value="female" />Female <br />
+            <input type="radio" id="gender" name="gender" value="others" />others <br />
+            <br>Enter your Address:<br>
+            <textarea></textarea><br>
+            <input type="submit" value="SUBMIT" onclick="val()">
+       
+    </form>
+</body>
+
+</html>

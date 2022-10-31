@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Optimal Web : Contact Form With JS</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+  <!-- contact1 -->
+  <section class="w3l-simple-contact-form1">
+    <div class="contact-form section-gap">
+      <div class="wrapper">
+        <div class="text-center">
+          <h1 style="font-size: 40px; ">Contact Us</h1>
+        </div>
+        <div class="contact-form" style="max-width: 450px; margin: 0 auto;">
+          <div class="form-mid">
+            <form id="form" onsubmit="Sendemail();reset(); return false;">
+              <div class="field">
+                <input type="text" class="form-control" name="Name" id="Name" placeholder="Name" required="">
+              </div>
+              <div class="field">
+                <input type="email" class="form-control" name="Sender" id="Sender" placeholder="Email" required="">
+              </div>
+              <div class="field">
+                <input type="text" class="form-control" name="Subject" id="Subject" placeholder="Subject" required="">
+              </div>
+              <textarea name="Message" class="form-control" id="Message" placeholder="Message" required=""></textarea>
+              <button type="submit" class="btn btn-contact">Send Message</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /contact1 -->
+
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+
+    function sendemail() {
+
+        Email.send({
+          
+          Host: "smtp.elasticemail.com",
+          Username: "photostock@gmail.com",
+          Password: "1765C343848B28E6A91AD2D7F2612ACD40C6",
+          To: 'darpanmhatre25@gmail.com',
+          From:'archerblaze0@gmail.com',
+          Subject: "This is the subject"+name,
+          Body: document.getElementById("Message").value,
+        }).then(
+          message => {
+            //console.log (message);
+            if (message == 'OK') {
+              alert('Your mail has been send. Thank you for connecting.');
+            }
+            else {
+              console.error(message);
+              alert('There is error at sending message. ')
+
+            }
+
+          }
+        );
+
+
+
+      }
+
+
+  </script>
+  </script>
+
+</body>
+
+</html>
