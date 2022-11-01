@@ -4,3 +4,6 @@
 [submodule "Division -B/02-Placement-Assistance-Service/plairsty-service"]
 	path = Division -B/02-Placement-Assistance-Service/plairsty-service
 	url = git@github.com:Plairsty/plairsty-backend.git
+[submodule "Division -B/13-Reimbursement-Service"]
+	path = Division -B/13-Reimbursement-Service
+	url = git@github.com:rahul007-bit/Reimbursement.git
