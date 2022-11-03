@@ -41,3 +41,4 @@ export SECURITY_PASSWORD_SALT="my_precious_two"
 export APP_MAIL_USERNAME="freakstar03"
 export APP_MAIL_PASSWORD="yeqzzkwqaerlmlfv"
 export APP_MAIL_ID="freakstar03@gmail.com"
+**
