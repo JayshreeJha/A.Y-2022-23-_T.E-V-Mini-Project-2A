@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">PhotoStock</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <a class="nav-link active" aria-current="page" href="#">BUY</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <table border="0" style="margin-left:auto; margin-right:auto; margin-top:100px ;min-height:500px; min-width:800px;">
+        <tr>
+            <td rowspan="11">
+                <div class="uploadbox" id="imgBox">
+                <label for="file"><img src="upload.png" style="cursor:pointer; width:350px; margin-left: 100px;"></label>
+                  <input type="file" accept="image/*" name="image" id="file" style="display:none; transform: translateX(-50%)" onchange="loadfile(event)">
+                </div>
+            </td>
+            <th colspan="2"><h3>Upload</h3></th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label for="uname">Name:</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" id="uname" class="form-control" style="text-align:left; font-size:small;" placeholder="Owner's username">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                    <label for="email">E-mail id:</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" id="email" class="form-control" style="text-align:left;" placeholder="abc@mail.com">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                    <label for="pno">Phone no.:</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" id="pno" class="form-control" style="text-align:left;" maxlength="10" size="7">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                    <label for="pics">Picture Type:</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <select name="pics" id="pics">
+                <option value="select">Select</option>
+                <option value="photo">Photo</option>
+                <option value="vector">Vector</option>
+                <option value="illustration">Illustration</option>
+                <option value="3d">3D</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                    <label for="amount">Amount:</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" id="amount" class="form-control" placeholder="In Rupees" style="text-align:left;">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                    <label for="descript">Description:</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" id="descript" class="form-control" style="text-align:left;">
+            </td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-info">Upload</button></td>
+            <td><button type="button" class="btn btn-danger">Cancel</button></td>
+        </tr>
+      </table>
+
+      <script>
+        var imgBox = document.getElementById("imgBox");
+        {
+            imgBox.style.backgroundImage = "url(" +URL.createObjectURL(event.target.files[0])+ ")";
+        }
+      </script>
+
+      
+    
+</body>
+
+</html>
