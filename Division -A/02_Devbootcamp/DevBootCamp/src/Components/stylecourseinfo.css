@@ -1,0 +1,17 @@
+.prose h3 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(243 244 246);
+
+    /* @apply mb-1 pb-2 border-b border-gray-200; */
+  }
+
+  .prose iframe {
+    width: 100%;
+    margin-top: 1.5rem;
+    aspect-ratio: 16 / 9;
+    border-radius: 0.75rem;
+
+    /* @apply w-full aspect-video mt-6 rounded-xl; */
+  }

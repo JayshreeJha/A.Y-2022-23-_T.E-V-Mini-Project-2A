@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    command: gunicorn --bind 0.0.0.0:5000 manage:app
+    volumes:
+      - static_volume:/home/app/web/static
+    expose:
+      - 5000
+    depends_on:
+      - db
+  db:
+    image: postgres:13-alpine
+    volumes:
+      - postgres_data_prod:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=freakstar03
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=devbootcamp
+  react:
+    build: react
+    volumes:
+      - react_volume:/home/app/react/build
+    depends_on:
+      - web
+  nginx:
+    build: ./ngnix
+    volumes:
+      - static_volume:/home/app/web/static
+      - react_volume:/usr/share/nginx/html
+    ports:
+      - 1337:80
+    depends_on:
+      - web
+      - react
+
+volumes:
+  postgres_data_prod:
+  static_volume:
+  react_volume:

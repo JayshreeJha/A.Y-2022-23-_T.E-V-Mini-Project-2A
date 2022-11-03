@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+
+/* Layout 1 */
+#layout-1 {
+  background: #fff;
+}
+
+#layout-1 h1 { display:flex-inline;
+  font: 300 3.3rem/1.5em 'Dosis', sans-serif;
+  color: #172838;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 2px solid #172838;
+  padding: 6px 0;
+
+}
+
+a.nav-link {
+    font-size: large;
+    /* padding-left: 5%; */
+}
+#layout-1 p {
+  color: #172838;
+  font: 400 1.3em/1.75em 'Gudea', sans-serif;
+  margin-bottom: 1.1em;
+  text-align: justify;
+}
+
+#layout-1 a {
+  color: #c32847;
+  text-decoration: none;
+  padding: 4px 10px;
+  border: 1px solid #c32847;
+  transition: background-color 0.5s ease;
+}
+
+#layout-1 a:hover {
+  color: #fff;
+  background: #c32847;
+}

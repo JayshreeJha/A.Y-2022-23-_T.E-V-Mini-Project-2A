@@ -1,0 +1,6 @@
+**/node_modules/**
+**/DevBootcamp_Backend/**
+**/build/**
+**/dist/**
+**/.git/**
+**/public/**

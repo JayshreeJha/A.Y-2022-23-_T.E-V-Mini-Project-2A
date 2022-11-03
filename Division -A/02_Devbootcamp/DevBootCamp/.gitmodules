@@ -1,0 +1,3 @@
+[submodule "DevBootcamp_Backend"]
+	path = DevBootcamp_Backend
+	url = git@github.com:FreakStar03/DevBootcamp_Backend.git

@@ -1,0 +1,74 @@
+version: '3.5'
+
+services:
+  postgres:
+    container_name: postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: freakstar03
+      POSTGRES_PASSWORD: password
+      PGDATA: /data/postgres
+    volumes:
+       - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+  
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: freakstar03@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: secret
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+       - pgadmin:/var/lib/pgadmin
+
+    ports:
+      - "5052:80"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+  server:
+    build: ./server
+    container_name: server
+    command: ['make', 'dev']
+    env_file:
+      - .env
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./server:/code
+      - ./client/dist:/code/dist
+    ports:
+      - $PORT:$PORT
+      - $DEBUG_PORT:$DEBUG_PORT
+    expose:
+      - $PORT
+      - $DEBUG_PORT
+    depends_on:
+      - db
+
+  client:
+    build: ./client
+    container_name: client
+    command: ['make', 'dev']
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./client:/code
+      - client_node_modules:/code/node_modules
+
+networks:
+  postgres:
+    driver: bridge
+  client_node_modules:
+    driver: local
+
+volumes:
+    postgres:
+    pgadmin:
+    client_node_modules:
