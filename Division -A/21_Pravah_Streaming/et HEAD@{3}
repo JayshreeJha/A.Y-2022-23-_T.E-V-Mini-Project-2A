@@ -1,0 +1,16 @@
+[33m4d034bb[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD
+[33m4d034bb[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{1}: reset: moving to HEAD~2
+[33mb7b449f[m HEAD@{2}: reset: moving to HEAD~3
+[33mc39873c[m HEAD@{3}: reset: moving to HEAD~2
+[33mff80a9e[m HEAD@{4}: reset: moving to HEAD~1
+[33m7012038[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{5}: pull: Merge made by the 'recursive' strategy.
+[33mff80a9e[m HEAD@{6}: commit: Adding Some Dependencies
+[33md62abe7[m HEAD@{7}: commit: Resolving Error In Deployment
+[33mc39873c[m HEAD@{8}: commit: Updating and Adding Models
+[33mf41f657[m[33m ([m[1;33mtag: v1.0[m[33m)[m HEAD@{9}: commit: Adding Registration Form
+[33m1946e49[m HEAD@{10}: commit: Deplyment Error Solve
+[33mb7b449f[m HEAD@{11}: commit: Addin Header Poster
+[33m1f23cca[m HEAD@{12}: commit: Edit Navbar
+[33m4d034bb[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{13}: commit: Adding Navbar
+[33m935c1f8[m HEAD@{14}: commit: Adding Navbar
+[33mcdb553e[m HEAD@{15}: commit (initial): Project Setup

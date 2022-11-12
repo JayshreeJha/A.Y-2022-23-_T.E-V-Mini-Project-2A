@@ -1,0 +1,72 @@
+[33mcommit 70120384cb021417da8e3be400ccfc0815466341[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: ff80a9e 49f1028
+Author: VishnukantMule <20104065@apsit.edu.in>
+Date:   Wed Oct 19 23:26:08 2022 +0530
+
+    Merge branch 'main' of https://github.com/VishnukantMULE/pravah
+
+[33mcommit ff80a9e61eb6ebdef60b77da5a01fa6fc3138058[m
+Author: VishnukantMule <20104065@apsit.edu.in>
+Date:   Wed Oct 19 23:24:20 2022 +0530
+
+    Adding Some Dependencies
+
+[33mcommit 49f102886d42b188768eaa4d0e956be9b29d3786[m
+Author: Vishnukant MUle <92650489+VishnukantMULE@users.noreply.github.com>
+Date:   Wed Oct 19 23:17:43 2022 +0530
+
+    Update package.json
+
+[33mcommit d62abe77aefe1902d291551df2941f99e583e3d1[m
+Author: VishnukantMule <20104065@apsit.edu.in>
+Date:   Wed Oct 19 22:48:52 2022 +0530
+
+    Resolving Error In Deployment
+
+[33mcommit c39873c36451e035d5ddc86e65154e329426dc4b[m
+Author: VishnukantMule <20104065@apsit.edu.in>
+Date:   Wed Oct 19 22:19:34 2022 +0530
+
+    Updating and Adding Models
+
+[33mcommit f41f657bad9a4056f3d25063e0e8486334930244[m[33m ([m[1;33mtag: v1.0[m[33m)[m
+Author: VishnukantMule <20104065@apsit.edu.in>
+Date:   Wed Oct 5 13:31:42 2022 +0530
+
+    Adding Registration Form
+
+[33mcommit 1946e49427a153465251b1743f9bd1ccb16327b7[m
+Author: VishnukantMule <20104065@apsit.edu.in>
+Date:   Tue Oct 4 15:53:44 2022 +0530
+
+    Deplyment Error Solve
+
+[33mcommit b7b449f3164b278450f4305b70a43b04bb8f0c66[m
+Author: VishnukantMule <20104065@apsit.edu.in>
+Date:   Tue Oct 4 15:46:17 2022 +0530
+
+    Addin Header Poster
+
+[33mcommit 1f23cca666277f8ab68570e70254d73c22aab126[m
+Author: VishnukantMule <20104065@apsit.edu.in>
+Date:   Tue Oct 4 03:26:04 2022 +0530
+
+    Edit Navbar
+
+[33mcommit 4d034bb62728d977bc464ff341c9d49b52354643[m
+Author: VishnukantMule <20104065@apsit.edu.in>
+Date:   Tue Oct 4 03:23:14 2022 +0530
+
+    Adding Navbar
+
+[33mcommit 935c1f875143c1e3f040ddd7c3b5b222af0b5e36[m
+Author: VishnukantMule <20104065@apsit.edu.in>
+Date:   Tue Oct 4 03:17:09 2022 +0530
+
+    Adding Navbar
+
+[33mcommit cdb553e3908996eb5bfb675b445b9ca2c5a86b19[m
+Author: VishnukantMule <20104065@apsit.edu.in>
+Date:   Mon Oct 3 23:58:49 2022 +0530
+
+    Project Setup
