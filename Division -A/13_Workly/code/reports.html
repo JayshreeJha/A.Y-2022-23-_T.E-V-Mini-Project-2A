@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    
+      <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+      <style type="text/css">
+        .notif:hover{
+          background-color: rgba(0,0,0,0.1);
+                  }
+      </style>
+</head>
+<body>
+   <div id="app">
+         <div id="sidebar" class='active'>
+            <div class="sidebar-wrapper active">
+               <div class="sidebar-header" style="height: 50px;margin-top: -30px">
+                     <span>
+                        <div class="logo" style="padding-bottom: 20px">
+                     <video autoplay loop muted>
+                    <source src="_Logo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                </span>
+                </div>
+               <div class="sidebar-menu" style="padding-top: 90px">
+                  <ul class="menu">
+                     <li class="sidebar-item active ">
+                        <a href="index.html" class='sidebar-link'>
+                        <i class="fa fa-home text-success"></i>
+                        <span>Dashboard</span>
+                        </a>
+                     </li>
+                     <li class="sidebar-item  has-sub">
+                        <a href="#" class='sidebar-link'>
+                        <i class="fa fa-building text-success"></i>
+                        <span>Department</span>
+                        </a>
+                        <ul class="submenu ">
+                           <li>
+                              <a href="add_department.html">Add Department</a>
+                           </li>
+                           <li>
+                              <a href="manage_department.html">Manage Department</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="sidebar-item  has-sub">
+                        <a href="#" class='sidebar-link'>
+                        <i class="fa fa-users text-success"></i>
+                        <span>Employees</span>
+                        </a>
+                        <ul class="submenu ">
+                           <li>
+                              <a href="add_employee.html">Add Employee</a>
+                           </li>
+                           <li>
+                              <a href="manage_employee.html">Manage Employee</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="sidebar-item  has-sub">
+                        <a href="#" class='sidebar-link'>
+                        <i class="fa fa-table text-success"></i>
+                        <span>Leave Management</span>
+                        </a>
+                        <ul class="submenu ">
+                           <li>
+                              <a href="all_leave.html">All Leaves</a>
+                           </li>
+                           <li>
+                              <a href="pending_leave.html">Pending Leaves</a>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="sidebar-item ">
+                        <a href="reports.html" class='sidebar-link'>
+                        <i class="fa fa-chart-bar text-success"></i>
+                        <span>Reports</span>
+                        </a>
+                     </li>
+                  </ul>
+    </div>
+    <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+</div>
+        </div>
+        <div id="main">
+            <nav class="navbar navbar-header navbar-expand navbar-light">
+                <a class="sidebar-toggler" href="#"><span class="navbar-toggler-icon"></span></a>
+                <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex align-items-center navbar-light ms-auto">
+                      <li class="dropdown nav-icon">
+                            <a href="#" data-bs-toggle="dropdown"
+                                class="nav-link  dropdown-toggle nav-link-lg nav-link-user">
+                                <div class="d-lg-inline-block">
+                                    <i data-feather="bell"></i><span class="badge bg-info"></span>
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-large">
+                                <h6 class='py-2 px-4'>Notifications</h6>
+                                <ul class="list-group rounded-none">
+                                    <li class="list-group-item border-0 align-items-start">
+                                    <div class="row mb-2">
+                                      </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                     <li class="dropdown">
+                        <a href="#" data-bs-toggle="dropdown"
+                           class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                           <div class="avatar me-1">
+                              <img src="assets/images/admin.png" alt="" srcset="">
+                           </div>
+                           <div class="d-none d-md-block d-lg-inline-block">Hi, Admin</div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                           <a class="dropdown-item" href="login.html"><i data-feather="log-out"></i> Logout</a>
+                        </div>
+                     </li>
+                  </ul>
+                </div>
+            </nav>
+            
+<div class="main-content container-fluid">
+    <div class="page-title">
+        <div class="row">
+            <div class="col-12 col-md-6 order-md-1 order-last">
+                <h3>Reports</h3>
+            </div>
+            <div class="col-12 col-md-6 order-md-2 order-first">
+                <nav aria-label="breadcrumb" class='breadcrumb-header'>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html" class="text-success">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Reports</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Basic Vertical form layout section start -->
+    <section id="basic-vertical-layouts">
+    <div class="row match-height">
+        <div class="col-md-12 col-12">
+        <div class="card">
+            <div class="card-content">
+            <div class="card-body">
+                <form class="form form-vertical">
+                <div class="form-body">
+                    <div class="row">
+                    <div class="col-12">
+                <div class="card-body">
+                  <div class="chart chart-lg">
+                    <canvas id="chartjs-pie"></canvas>
+                  </div>
+                </div>
+                    </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+    <!-- // Basic Vertical form layout section end -->
+</div>
+        </div>
+    </div>
+    <script src="assets/js/feather-icons/feather.min.js"></script>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+    <script src="assets/js/main.js"></script>
+  <script src="assets/js/chart.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Pie chart
+      new Chart(document.getElementById("chartjs-pie"), {
+        type: "pie",
+        data: {
+          labels: ["Approved", "Pending", "Cancelled"],
+          datasets: [{
+            data: [34, 12, 15],
+            backgroundColor: [
+              window.theme.primary,
+              window.theme.warning,
+              window.theme.danger,
+            ],
+            borderColor: "transparent"
+          }]
+        },
+        options: {
+          maintainAspectRatio: true,
+          legend: {
+            display: true
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
