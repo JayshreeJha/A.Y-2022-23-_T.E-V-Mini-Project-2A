@@ -1,0 +1,16 @@
+TITLE - TRIVIA(PHOTOGRAPHY WEBSITE)
+
+GROUP MEMBERS - VAISHNAVI BHALERAO
+		MAYURESH KALKAR
+		PALLAVI TAMBE
+
+
+BRIEF DESCRIPTION - Trivia is a Photography website for sharing and categorizing images found online. In this
+ever-changing sea of social platforms, it is difficult to decide which social platforms you
+should be involved with.So trivia comes with filters and classifiers where user can filter
+through particular images.Images are classified with particular domain.Image classification is
+very important because it can help user to detect type of or content of the image. In Trivia user can also login and upload images.Login details will be stored in a database. In Trivia user can classify images and he can upload his idea through photos.Trivia requires
+brief descriptions but the main focus of the site is visual. Clicking on an imagewill take you
+to the original source. Users can browse or search for image content and can follow the
+boards of other users and can “like” or repine other users’ pins. Trivia is more of a search engine than a social media site because it allAllows users to
+stumble upon unique pieces of new information.
