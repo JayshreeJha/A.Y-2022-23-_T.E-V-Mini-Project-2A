@@ -6,8 +6,8 @@ the main feature of our site is what you want you stream. that means we have hug
 <b><h2>Software Used</h2><b>
   <hr>
   Pravah Studio is SImple react App
-
-    <b>Frontend</b>:<p>1.ReactJs</p>
+<div>
+    <b>Frontend</b><p>1.ReactJs</p>
       <p>2.Css</p>
       <p>3.Bootstrap 5</p>
     <b>Backend</b>
@@ -20,3 +20,4 @@ the main feature of our site is what you want you stream. that means we have hug
        <b>Media Server</b>
     <p>1.Cloudinary</p>
         
+  </div>
