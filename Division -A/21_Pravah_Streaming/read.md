@@ -21,5 +21,11 @@ the main feature of our site is what you want you stream. that means we have hug
 <hr>
   <b><h2>How To run</h2></b>
   For That you have to simply visit our site https://www.pravah.studio/
-
+  
+  
+   <b><h2>Our Team </h2></b>
+  Prathamesh Naik (leader)
+  Avinash Andhale
+  Vishnukant Mule
+  
   
