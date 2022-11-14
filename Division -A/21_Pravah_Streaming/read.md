@@ -7,14 +7,14 @@ the main feature of our site is what you want you stream. that means we have hug
   <hr>
   Pravah Studio is SImple react App
 <div>
-    <b>Frontend</b><p>1.ReactJs</p>
+    <b><h3>Frontend</h3></b><p>1.ReactJs</p>
       <p>2.Css</p>
       <p>3.Bootstrap 5</p>
-    <b>Backend</b>
+    <b><h3>Backend</h3></b>
       <p>1.NodeJS</p>
       <p>2.ExpressJs</p>
-     <b>DataBase</b>
+     <b><h3>DataBase</h3></b>
       <p>1.MoongoDB Atlas</p>
-     <b>Media Server</b>
+     <b><h3>Media Server</h3></b>
       <p>1.Cloudinary</p>
 </div>
