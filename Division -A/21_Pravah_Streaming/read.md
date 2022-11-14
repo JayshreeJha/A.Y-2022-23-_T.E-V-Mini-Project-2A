@@ -1,6 +1,6 @@
 <b><h2>⭕About</h2></b>
 <hr>
-Pravah Streaming Website is vidieo streaming website where you can easily stream novies and videos.
+Pravah Streaming Website is  video streaming website where you can easily stream movies and videos.
 the main feature of our site is what you want you stream. that means we have huge moovies and vidieos of all categories. It is not only for adults but also childs
 
 <b><h2>👨‍💻Software Used</h2><b>
