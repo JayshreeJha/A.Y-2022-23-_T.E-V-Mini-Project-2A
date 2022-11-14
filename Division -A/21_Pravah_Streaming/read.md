@@ -24,8 +24,10 @@ the main feature of our site is what you want you stream. that means we have hug
   
   
    <b><h2>Our Team </h2></b>
-  Prathamesh Naik (leader)
-  Avinash Andhale
-  Vishnukant Mule
+  🔶Prathamesh Naik (leader)  
+  
+  🔶Avinash Andhale  
+  
+  🔶Vishnukant Mule
   
   
