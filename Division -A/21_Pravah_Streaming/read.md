@@ -1,9 +1,9 @@
-<b><h2>About</h2></b>
+<b><h2>⭕About</h2></b>
 <hr>
 Pravah Streaming Website is vidieo streaming website where you can easily stream novies and videos.
 the main feature of our site is what you want you stream. that means we have huge moovies and vidieos of all categories. It is not only for adults but also childs
 
-<b><h2>Software Used</h2><b>
+<b><h2>👨‍💻Software Used</h2><b>
   <hr>
   Pravah Studio is SImple react App
 <div>
@@ -19,7 +19,7 @@ the main feature of our site is what you want you stream. that means we have hug
       <p>1.Cloudinary</p>
 </div>
 <hr>
-  <b><h2>How To run</h2></b>
+  <b><h2>▶️How To run</h2></b>
   For That you have to simply visit our site https://www.pravah.studio/
   
   
