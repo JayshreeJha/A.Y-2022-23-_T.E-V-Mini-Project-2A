@@ -20,6 +20,6 @@ the main feature of our site is what you want you stream. that means we have hug
 </div>
 <hr>
   <b><h2>How To run</h2></b>
-  For That you have to simply visit our site [Pravah Studio]([https://link-url-here.org](https://www.pravah.studio/))
+  For That you have to simply visit our site https://www.pravah.studio/
 
   
