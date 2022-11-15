@@ -1,0 +1,60 @@
+.center{
+    align-content: center;
+    padding-left: 43%;
+}
+.head{
+    padding-left: 50%px;
+}
+.cardprofile{
+    border: 0.5px solid rgba(255, 0, 0, 0.415);
+    align-content: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.profilebg{
+    background-color: black;
+}
+.profileimg{
+    width: 250px;
+    align-items: center;
+}
+.like_buton{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.like_buton:hover{
+    color: rgba(255, 0, 0, 0.535);
+    font-size: 45px;
+    
+}
+.like_buton:focus{
+    color: rgb(255, 0, 0);
+}
+.save_buton{
+    padding: 25px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.save_buton:hover{
+    color: rgba(0, 255, 13, 0.456);
+    font-size: 45px;
+}
+.save_buton:focus{
+    color: rgb(0, 255, 13);
+}
+.send_button{
+    padding-left: 25px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.send_button:hover{
+    color: rgb(226, 3, 255);
+    font-size: 45px;
+}

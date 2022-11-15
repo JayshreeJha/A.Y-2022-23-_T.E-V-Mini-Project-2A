@@ -1,0 +1,152 @@
+.navbar {
+  box-shadow: 0 1px 5px #000000;
+}
+
+.navbar-brand {
+  padding: 14.5px;
+}
+
+.navbar-nav {
+
+  width: 86px;
+}
+
+.navbar-form {
+  position: absolute;
+  right: 86px;
+  left: 234px;
+}
+
+
+.sidebar {
+  font-size: 17px;
+
+  position: fixed;
+  z-index: 102;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+
+
+}
+
+.sidebar .primary {
+  float: left;
+
+  width: 64px;
+  height: 100%;
+
+  background: none repeat scroll 0 0 black;
+  border: 0.5px solid rgba(255, 0, 0, 0.299);
+
+}
+
+.button {
+  font-size: inherit;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1;
+  line-height: initial;
+
+  position: relative;
+
+  display: inline-block;
+  display: block;
+
+  width: 100%;
+  height: 60px;
+  padding: 8px 12px;
+  padding: 10px;
+
+  cursor: pointer;
+  cursor: pointer;
+  transition: all 0.14s ease 0s;
+  transition: background 0.12s ease 0s;
+  text-align: left;
+  text-decoration: none;
+
+  color: #fff;
+  color: #999;
+  border: 0 none;
+  border-radius: 0;
+  outline: 0 none;
+  background: none repeat scroll 0 0 black;
+}
+
+.button.spacer {
+  height: 18px;
+}
+
+.button.active,
+.button:hover {
+  color: #fefefe;
+  border-left: 4px solid #ff0000;
+  background: none repeat scroll 0 0 #333;
+}
+
+.button.active {
+  color: #333;
+  border: 0 none transparent;
+  border-left: 4px solid #ff0000;
+  background: #000000;
+  box-shadow: 0 0 0 transparent;
+}
+
+.button {
+  border-top: 1px solid #ff000043;
+  border-bottom: 1px solid #ff00003c;
+}
+
+.button .fa {
+  line-height: 60px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 40px;
+
+  text-align: center;
+}
+
+.global-header {
+  font-size: 15px;
+  line-height: 60px;
+
+  position: absolute;
+  position: fixed;
+  z-index: 4;
+  bottom: 0;
+  left: 0;
+
+  box-sizing: border-box;
+  width: 100%;
+  width: 64px;
+  height: 60px;
+
+  border-top: 1px solid #111;
+  border-bottom: 0 none;
+  background: linear-gradient(to bottom, #222 0%, rgb(0, 0, 0) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+header {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  text-decoration: underline;
+}
+
+.secondary {
+  width: 250px;
+  padding: 16px 8px;
+
+  background-color: #000000;
+  box-shadow: 1px 0 5px rgba(255, 255, 255, 0.4);
+
+}
